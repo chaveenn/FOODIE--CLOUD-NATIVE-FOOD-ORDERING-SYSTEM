@@ -1,0 +1,17 @@
+apiVersion: v1
+data:
+  CLOUDINARY_API_KEY: "744967678128541"
+  CLOUDINARY_API_SECRET: _OtfvcVVzIqw33gMEIITdJ4Ez2o
+  CLOUDINARY_CLOUD_NAME: dqboluwkd
+  EMAIL_PASS: tiys xpsp skio mfgz
+  EMAIL_USER: shewnichaveen@gmail.com
+  GOOGLE_MAPS_API_KEY: AIzaSyBjfPL7jM79cojfosPceoF3InC0DlfnzUo
+  JWT_SECRET: "20020216"
+  MONGODB_URL: mongodb+srv://chaveen:IT22129376@foodappcluster.4l6ru.mongodb.net/RestaurantDB?retryWrites=true&w=majority&appName=FoodAppCluster
+  PORT: "5001"
+  USER_SERVICE_URL: http://user-management-service:8090
+kind: ConfigMap
+metadata:
+  labels:
+    io.kompose.service: restaurant-service-restaurant-service--env
+  name: restaurant-service--env

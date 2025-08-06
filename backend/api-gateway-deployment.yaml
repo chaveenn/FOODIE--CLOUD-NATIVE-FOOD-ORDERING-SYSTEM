@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.36.0 (HEAD)
+  labels:
+    io.kompose.service: api-gateway
+  name: api-gateway
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: api-gateway
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose convert
+        kompose.version: 1.36.0 (HEAD)
+      labels:
+        io.kompose.service: api-gateway
+    spec:
+      containers:
+        - envFrom:
+            - configMapRef:
+                name: api-gateway--env
+          image: api-gateway
+          name: api-gateway
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8000
+              protocol: TCP
+      restartPolicy: Always

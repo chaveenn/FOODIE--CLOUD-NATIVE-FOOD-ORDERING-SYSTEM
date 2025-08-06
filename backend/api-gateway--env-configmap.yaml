@@ -1,0 +1,18 @@
+apiVersion: v1
+data:
+  DELIVERY_API: http://delivery-service:4002
+  DELIVERY_SERVICE_PORT: "4002"
+  ORDER_API: http://order-service:5002
+  ORDER_SERVICE_PORT: "5002"
+  PAYMENT_API: http://payment-auth-service:5004
+  PAYMENT_SERVICE_PORT: "5004"
+  PORT: "8000"
+  RESTAURANT_API: http://restaurant-service:5001
+  RESTAURANT_SERVICE_PORT: "5001"
+  USER_API: http://user-management-service:8090
+  USER_SERVICE_PORT: "8090"
+kind: ConfigMap
+metadata:
+  labels:
+    io.kompose.service: api-gateway-api-gateway--env
+  name: api-gateway--env

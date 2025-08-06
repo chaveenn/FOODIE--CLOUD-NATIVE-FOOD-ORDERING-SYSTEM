@@ -1,0 +1,15 @@
+apiVersion: v1
+data:
+  EMAIL_PASS: tiys xpsp skio mfgz
+  EMAIL_USER: shewnichaveen@gmail.com
+  GOOGLE_MAPS_API_KEY: AIzaSyBjfPL7jM79cojfosPceoF3InC0DlfnzUo
+  JWT_SECRET: "20020216"
+  MONGODB_URL: mongodb+srv://chaveen:IT22129376@foodappcluster.4l6ru.mongodb.net/OrderManagementDB?retryWrites=true&w=majority&appName=FoodAppCluster
+  PORT: "5002"
+  RESTAURANT_SERVICE_URL: http://restaurant-service:5001
+  USER_SERVICE_URL: http://user-management-service:8090
+kind: ConfigMap
+metadata:
+  labels:
+    io.kompose.service: order-service-order-service--env
+  name: order-service--env
