@@ -1,0 +1,151 @@
+:root {
+  --bg-main: #ffffff;
+  --bg-input: #f2f2f2;
+  --input-border: #ccc;
+  --text-primary: #333333;
+  --placeholder-color: #888888;
+  --button-bg: #0A9396;
+  --button-hover: #088c8f;
+  --form-shadow: rgba(0, 0, 0, 0.1);
+  --container-bg: #f7f7f7;
+}
+
+
+.res-register {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.res-reg-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+  background-color: #f5f5f7; /* Light gray background instead of image */
+}
+
+.res-reg-form {
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 500px;
+  margin-left: 50%;
+}
+
+.res-reg-form h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+  color: #000;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.res-reg-form p.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 32px;
+  font-size: 16px;
+}
+
+.res-reg-form input {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+}
+
+.res-reg-form input:focus {
+  border-color: #0066ff;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 102, 255, 0.1);
+}
+
+.res-reg-form button {
+  width: 100%;
+  padding: 16px;
+  background-color: #0A9396;
+  color: white;
+  border: 2px solid #0A9396;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 8px;
+}
+
+.res-reg-form button:hover {
+  background-color: #ffffff;
+  color: #000;
+  border: 2px solid #0A9396;
+}
+
+/* Terms and conditions text */
+.terms {
+  font-size: 14px;
+  color: #666;
+  margin: 24px 0;
+  line-height: 1.5;
+}
+
+.terms strong {
+  font-weight: 600;
+}
+
+/* Error message styling */
+.error-message {
+  color: #ff4444;
+  margin: 16px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Success message styling */
+.success-message {
+  color: #00C851;
+  margin: 16px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Phone number container */
+.phone-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.phone-container span {
+  margin-right: 8px;
+  font-size: 16px;
+  color: #333;
+  white-space: nowrap;
+}
+
+.phone-container input {
+  margin-bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .res-reg-form {
+    padding: 1.5rem;
+  }
+  
+  .res-reg-form h2 {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,146 @@
+/* Updated to match the registration form theme */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Slide Content - Hero Section */
+.slide-content {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+.slide-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Description Text */
+.slide-text {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 20px 30px;
+  font-size: 2.5rem;
+  border-radius: 8px;
+  text-align: center;
+  width: 80%;
+  max-width: 1000px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(4px);
+}
+
+/* Location Input Styling - Matches form input style */
+.location-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 500px;
+  background: rgba(33, 37, 41, 0.9);
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin: 0 auto;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.location-input:focus-within {
+  box-shadow: 0 0 0 2px rgba(0, 102, 255, 0.2);
+}
+
+.location-icon {
+  font-size: 20px;
+  color: white;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.location-field {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: white;
+  padding: 8px 0;
+  font-weight: 500;
+}
+
+.location-field::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 400;
+}
+
+.location-button {
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 8px;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-button:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .slide-content {
+    height: 500px;
+  }
+  
+  .slide-text {
+    font-size: 1.8rem;
+    padding: 15px 20px;
+    width: 90%;
+    bottom: 10%;
+  }
+  
+  .location-input {
+    top: 25%;
+    width: 85%;
+    padding: 10px 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slide-text {
+    font-size: 1.5rem;
+    padding: 12px 16px;
+  }
+  
+  .location-field {
+    font-size: 14px;
+  }
+  
+  .location-icon {
+    font-size: 18px;
+  }
+}
